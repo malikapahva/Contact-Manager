@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.malika.contactmanager" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/contact"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ContactInfo"
+            android:label="Contacts"></activity>
+        <activity android:name=".activity.AddContact"
+            android:label="Add Contact"></activity>
+        <activity android:name=".activity.DisplayContact"
+            android:label="Contact Details"></activity>
+    </application>
+
+</manifest>
