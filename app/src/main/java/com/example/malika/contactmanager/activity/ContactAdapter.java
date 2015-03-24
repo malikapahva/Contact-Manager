@@ -20,7 +20,6 @@ import java.util.List;
  */
 public class ContactAdapter extends BaseAdapter {
     private List<Contact> contacts;
-    private Context context;
     private LayoutInflater layoutInflater;
 
     /**
@@ -33,7 +32,6 @@ public class ContactAdapter extends BaseAdapter {
      */
     public ContactAdapter(List<Contact> contacts, Context context) {
         this.contacts = contacts;
-        this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -95,7 +93,7 @@ public class ContactAdapter extends BaseAdapter {
         }
         Contact contact = getItem(i);
         TextView contactView = (TextView) view.findViewById(android.R.id.text1);
-        contactView.setText(contact.getFirstName() + "\t" + contact.getLastName() + "\n" + contact.getPhoneNumber());
+        contactView.setText(contact.getFirstName() + " " + contact.getLastName() + "\n" + contact.getPhoneNumber());
         return view;
     }
 }

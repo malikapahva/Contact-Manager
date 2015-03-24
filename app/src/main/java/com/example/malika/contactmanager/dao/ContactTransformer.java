@@ -63,7 +63,7 @@ public class ContactTransformer {
         contact.setFirstName(contactRecord[1]);
         contact.setLastName(contactRecord[2]);
         contact.setPhoneNumber(contactRecord[3]);
-        contact.setEmail(contactRecord[4]);
+        contact.setEmail(contactRecord[4].trim());
         return contact;
     }
 }
