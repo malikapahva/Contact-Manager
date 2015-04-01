@@ -250,7 +250,7 @@ public class ContactDao {
         Collections.sort(contacts, new Comparator<Contact>() {
             @Override
             public int compare(Contact lhs, Contact rhs) {
-                return lhs.getFirstName().compareTo(rhs.getFirstName());
+                return lhs.getFirstName().compareToIgnoreCase(rhs.getFirstName());
             }
         });
 

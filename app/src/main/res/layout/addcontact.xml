@@ -36,4 +36,6 @@
         android:hint="Enter email id"
         android:inputType="textEmailAddress" />
 
+
+
 </LinearLayout>
